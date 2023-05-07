@@ -21,14 +21,16 @@ class NewsClient {
     newsData.forEach((data) => {
       // console.log(data)
       const headlineDiv = document.createElement('div');
-      headlineDiv.classList.add('headline');
-      headlineDiv.innerHTML = `<img src="${data.image}" alt="">
-      <h3>${data.title}</h3>
+      headlineDiv.classList.add('headline-box');
+      headlineDiv.innerHTML = `<div class="img-vs-text">
+      <img src="${data.image}" alt="">
+      <div class="text">
+      <h2>${data.title}</h2>
       <div class="info">
-        <p class="section">${data.section}</p>
-        <p class="date">${data.date}</p>
-        <p class="byline">${data.byline}</p>
-      </div>`;
+        <p class="section">Grauniad ${data.section}</p>
+        <p class="small">${data.date.split("T")[0]}</p>
+        <p class="small">${data.byline}</p>
+      </div></div></div>`;
       this.mainDiv.append(headlineDiv);
     })
   }
