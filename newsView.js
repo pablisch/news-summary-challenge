@@ -17,13 +17,30 @@ class NewsClient {
     const news = await this.client.loadHeadlines();
     this.model.setHeadlines(news);
     const newsData = this.model.getHeadlines();
-    // console.log(newsData);
+    console.log(`data = ${newsData[0].title}`)
     newsData.forEach((data) => {
-      // console.log(data)
       const headlineDiv = document.createElement('div');
       headlineDiv.classList.add('headline-box');
       headlineDiv.innerHTML = `<div class="img-vs-text">
-      <img src="${data.image}" alt="">
+      <img class="image" src="${data.image}" alt="">
+      <div class="text">
+      <h2>${data.title}</h2>
+      <div class="info">
+        <p class="section">Grauniad ${data.section}</p>
+        <p class="small">${data.date.split("T")[0]}</p>
+        <p class="small">${data.byline}</p>
+      </div></div></div>`;
+      this.mainDiv.append(headlineDiv);
+    })
+    // this.displayPage(newsData);
+  }
+
+  displayPage(newsData) {
+    newsData.forEach((data) => {
+      const headlineDiv = document.createElement('div');
+      headlineDiv.classList.add('headline-box');
+      headlineDiv.innerHTML = `<div class="img-vs-text">
+      <img class="image" src="${data.image}" alt="">
       <div class="text">
       <h2>${data.title}</h2>
       <div class="info">

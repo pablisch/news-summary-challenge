@@ -133,7 +133,7 @@ nav .page {
 /* Rotation nonsense */
 
 nav img {
-  animation: rotate 60s infinite linear;
+  animation: rotate 20s infinite linear;
 }
 
 @keyframes rotate {

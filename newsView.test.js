@@ -51,9 +51,26 @@ describe('NewsView class', () => {
     }];
   })
 
-  test('returns', () => {
-
+  test('displayPage renders data to index.html #1', () => {
+    view.displayPage(madeUpData1);
+    expect(document.querySelectorAll('h2').length).toBe(1)
+    expect(document.querySelectorAll('h2')[0].textContent).toEqual("Nothing is real")
+    expect(document.querySelectorAll('.section')[0].textContent).toEqual("Grauniad Fake news")
   });
+
+  test('displayPage renders data to index.html #2', () => {
+    view.displayPage(madeUpData2);
+    expect(document.querySelectorAll('h2').length).toBe(2)
+    expect(document.querySelectorAll('h2')[1].textContent).toEqual("Life is beautiful")
+    expect(document.querySelectorAll('.image')[1].src).toEqual("http://localhost/Imagination")
+  });
+
+  // test('displayHeadlines calls functions and renders index.html #1', () => {
+  //   view.displayHeadlines();
+    // expect(document.querySelectorAll('h2').length).toBe(2)
+    // expect(document.querySelectorAll('h2')[1].textContent).toEqual("Life is beautiful")
+    // expect(document.querySelectorAll('.image')[1].src).toEqual("http://localhost/Imagination")
+  // });
 });
 
 
