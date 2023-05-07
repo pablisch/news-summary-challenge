@@ -15,7 +15,22 @@ class NewsClient {
 
   async displayHeadlines() {
     const news = await this.client.loadHeadlines();
-    console.log(news)
+    this.model.setHeadlines(news);
+    const newsData = this.model.getHeadlines();
+    // console.log(newsData);
+    newsData.forEach((data) => {
+      // console.log(data)
+      const headlineDiv = document.createElement('div');
+      headlineDiv.classList.add('headline');
+      headlineDiv.innerHTML = `<img src="${data.image}" alt="">
+      <h3>${data.title}</h3>
+      <div class="info">
+        <p class="section">${data.section}</p>
+        <p class="date">${data.date}</p>
+        <p class="byline">${data.byline}</p>
+      </div>`;
+      this.mainDiv.append(headlineDiv);
+    })
   }
 }
 

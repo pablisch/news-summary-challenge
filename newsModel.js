@@ -5,6 +5,7 @@ class NewsModel {
 
   setHeadlines(data) {
     this.headlines = data;
+    // console.log(this.headlines) //VISIBILITY
   }
 
   getHeadlines() {

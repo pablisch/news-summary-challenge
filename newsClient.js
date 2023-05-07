@@ -18,7 +18,7 @@ class NewsClient {
       }
 
       const data = await response.json();
-      console.log(data) // VISIBILITY
+      // console.log(data) // VISIBILITY
       const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
       // const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
         return {

@@ -31,8 +31,28 @@ describe('NewsClient class', () => {
         ],
       },
     }
-    mockLoadData = fetch.mockResponseOnce(JSON.stringify(mockData));
-  });
+    testMockData = [{
+      response: {
+        status: 'ok',
+        results: [
+          {
+            sectionName: 'Sport',
+            webPublicationDate: '2023-05-05T17:44:04Z',
+            webUrl:
+              'https://www.theguardian.com/sport/2023/may/05/steve-smith-first-ashes-warm-up-with-sussex-undone-by-josh-tongue-glamorgan',
+            fields: {
+              headline:
+                'Steve Smiths first Ashes warm-up with Sussex undone by sharp Tongue',
+              byline: 'Ali Martin at New Road',
+              thumbnail:
+                'https://media.guim.co.uk/f7fd05eb0ed7226d01fa928ed42d50cfcc542f71/624_74_3318_1991/500.jpg',
+            },
+          },
+        ],
+      },
+    }]
+    mockLoadData = fetch.mockResponseOnce(JSON.stringify(testMockData));
+  }); // USE mockData WITH API but testMockData WITH LOCAL DATA!!!!!
 
   test('calls fetch and loads data', async () => {
     mockLoadData;

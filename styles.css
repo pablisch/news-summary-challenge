@@ -91,7 +91,7 @@ nav .page {
 
 /* Rotation nonsense */
 
-img {
+nav img {
   animation: rotate 60s infinite linear;
 }
 
