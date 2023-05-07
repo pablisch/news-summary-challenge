@@ -1,6 +1,6 @@
-const Client = require('./NewsClient');
-const Model = require('./NewsModel');
-const View = require('./NewsView');
+const Client = require('./newsClient');
+const Model = require('./newsModel');
+const View = require('./newsView');
 
 
 const client = new Client;

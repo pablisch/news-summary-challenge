@@ -1,4 +1,4 @@
-const Client = require('./NewsClient');
+const Client = require('./newsClient');
 
 require('jest-fetch-mock').enableMocks();
 
@@ -10,7 +10,7 @@ describe('NewsClient class', () => {
 
   beforeEach(() => {
     fetch.resetMocks();
-    client = new Client;
+    client = new Client();
     mockData = {
       response: {
         status: 'ok',
@@ -38,7 +38,7 @@ describe('NewsClient class', () => {
     mockLoadData;
 
     const dataFromApi = await client.loadHeadlines();
-    
+
     // console.log(`data = ${JSON.stringify(dataFromApi[0])}`); // VISIBILITY
 
     expect(dataFromApi[0].section).toEqual("Sport");
