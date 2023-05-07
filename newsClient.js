@@ -3,7 +3,7 @@ const apiKey = require('./apiKey'); // 👈🏻 THE REAL API KEY
 
 class NewsClient {
   async loadHeadlines() {
-    const search = '';
+    // const search = '';
     // const newsUrl = `https://content.guardianapis.com/search?q=${search}&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=${apiKey}`
     try {
       // const response = await fetch(newsUrl); // 👈🏻 THE REAL FETCH REQUEST
@@ -18,8 +18,8 @@ class NewsClient {
       }
 
       const data = await response.json();
-      // console.log(data) // VISIBILITY
-      const headlinesArray = data.response.results.map(headline => { // 👈🏻 TEST LINE
+      console.log(data) // VISIBILITY
+      const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
       // const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
         return {
           section: headline.sectionName,
