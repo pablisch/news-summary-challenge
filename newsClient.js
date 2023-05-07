@@ -6,11 +6,11 @@ class NewsClient {
     const newsUrl = `https://content.guardianapis.com/search?q=${search}&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=${apiKey}`
 
     try {
-      const res = await fetch(newsUrl);
-      if (!res.ok) {
+      const response = await fetch(newsUrl);
+      if (!response.ok) {
         throw new Error(`Computer says no: ${response.status}`);
       }
-      const data = await res.json();
+      const data = await response.json();
       const headlinesArray = data.response.results.map(headline => {
         return {
           section: headline.sectionName,
