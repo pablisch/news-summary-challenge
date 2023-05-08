@@ -41,3 +41,5 @@ buttonEventListener
 > clearSearch # clears search field after search
 ```
 
+![process flow](images/news-summary-challenge-processes.png)
+

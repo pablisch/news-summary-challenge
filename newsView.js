@@ -18,7 +18,7 @@ class NewsClient {
     this.model.setHeadlines(news);
     const newsData = this.model.getHeadlines();
     console.log(`data = ${newsData[0].title}`)
-    newsData.forEach((data) => {
+    newsData.forEach((data) => { // either this section below or => this.displayPage(newsData);
       const headlineDiv = document.createElement('div');
       headlineDiv.classList.add('headline-box');
       headlineDiv.innerHTML = `<div class="img-vs-text">
