@@ -1,13 +1,13 @@
-// const apiKey = 'test'; // 👈🏻 THE REAL API KEY
-const apiKey = require('./apiKey'); // 👈🏻 THE REAL API KEY
+const apiKey = 'test'; // 👈🏻 THE test API KEY
+// const apiKey = require('./apiKey'); // 👈🏻 THE REAL API KEY
 
 class NewsClient {
-  async loadHeadlines() {
-    // const search = '';
-    // const newsUrl = `https://content.guardianapis.com/search?q=${search}&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=${apiKey}`
+  async loadHeadlines(searchString) {
+    const newsUrl = `https://content.guardianapis.com/search?q=${searchString}&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=${apiKey}`
+    // console.log(newsUrl) // VISIBILITY
     try {
-      // const response = await fetch(newsUrl); // 👈🏻 THE REAL FETCH REQUEST
-      const response = await fetch('./newsSample.js'); // 👈🏻 THE TEST FETCH REQUEST
+      const response = await fetch(newsUrl); // 👈🏻 THE REAL FETCH REQUEST
+      // const response = await fetch('./newsSample.js'); // 👈🏻 THE TEST FETCH REQUEST
 
       if (response.status === 404) { // check if response.status is 404
         throw new Error(`All that was found was disappointment - status ${response.status}`) // throw new error with response.status
@@ -19,8 +19,8 @@ class NewsClient {
 
       const data = await response.json();
       // console.log(data) // VISIBILITY
-      const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
-      // const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
+      // const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
+      const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
         return {
           section: headline.sectionName,
           title: headline.fields.headline,
@@ -31,11 +31,12 @@ class NewsClient {
         };
       });
       return headlinesArray
-    } catch (error) {
+    } catch(error) {
       throw new Error(`Network is sleeping: ${error.message}`);
     }
   }
 }
+
 
 module.exports = NewsClient;
 

@@ -51,7 +51,7 @@ describe('NewsClient class', () => {
         ],
       },
     }]
-    mockLoadData = fetch.mockResponseOnce(JSON.stringify(testMockData));
+    mockLoadData = fetch.mockResponseOnce(JSON.stringify(mockData));
   }); // USE mockData WITH API but testMockData WITH LOCAL DATA!!!!!
 
   test('calls fetch and loads data', async () => {

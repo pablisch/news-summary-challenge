@@ -92,6 +92,10 @@ nav .page {
 
 /* headline divs */
 
+a {
+  text-decoration: none;
+}
+
 .headline-box {
   border: 1px solid #adadad;
   margin: 20px 0;

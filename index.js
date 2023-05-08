@@ -7,4 +7,4 @@ const client = new Client;
 const model = new Model;
 const view = new View(model, client);
 
-view.displayHeadlines();
+view.displayHeadlines("");

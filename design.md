@@ -31,8 +31,7 @@ NewsView:
 this.searchButtonEl
 this.searchInputEl
 this.model
-this.client
-this.newsContainerEl
+this.clientthis.newsContainerEl
 buttonEventListener
 > displayHeadlines
 > displayArticle
