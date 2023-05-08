@@ -61,7 +61,7 @@ describe('NewsView class', () => {
   xtest('displayHeadlines calls functions and renders index.html #1', async () => {
     const results = await view.displayHeadlines();
     console.log(`results = ${results} in test`)
-    expect(document.querySelectorAll('h2').length).toBe(2)
+    expect(document.querySelectorAll('h2').length).toBe(3234234) // this test is nonsense!
     expect(document.querySelectorAll('h2')[1].textContent).toEqual("Life is beautiful")
     expect(document.querySelectorAll('.image')[1].src).toEqual("http://localhost/Imagination")
   });
