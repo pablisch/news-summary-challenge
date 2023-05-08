@@ -18,20 +18,10 @@ class NewsClient {
       }
 
       const data = await response.json();
-      // console.log(data) // VISIBILITY
-      // const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
-      console.log(data)
-      const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
-        return {
-          section: headline.sectionName,
-          title: headline.fields.headline,
-          byline: headline.fields.byline,
-          image: headline.fields.thumbnail,
-          date: headline.webPublicationDate,
-          url: headline.webUrl,
-        };
-      });
-      return headlinesArray
+      
+      console.log(`Data returned from client is ${data.response.results[0].sectionName}`)
+      return data;
+
     } catch(error) {
       throw new Error(`Network is sleeping: ${error.message}`);
     }

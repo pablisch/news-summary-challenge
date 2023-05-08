@@ -18,9 +18,10 @@ class NewsView {
 
   async displayHeadlines(searchString) {
     this.clearPage();
-    const news = await this.client.loadHeadlines(searchString);
-    console.log(`news = ${news}`)
-    this.model.setHeadlines(news);
+    const rawNews = await this.client.loadHeadlines(searchString);
+    const newsUnpacked = this.model.unpackData(rawNews)
+    console.log(`news = ${newsUnpacked}`)
+    this.model.setHeadlines(newsUnpacked);
     const newsData = this.model.getHeadlines();
     console.log(`newsData = ${newsData}`)
     
