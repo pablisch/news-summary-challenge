@@ -1,39 +1,46 @@
 # News challenge
 
-* Feel free to use Google, your notes, books, etc. but work on your own.
-* If you refer to the solution of another coach or student, please put a link to that in
-  your README.
-* If you have a partial solution, **still check in a partial solution** and send in a pull
-  request.
-* You must submit a pull request to this repo with your code by 10am Monday morning.
+News Challenge is a Makers Academy weekend challenge to build a news app using the Guardian API.
 
-## Challenge
+The app displays the top 10 headlines from the Guardian API. Clicking on a headline will open the article in a new tab. The search bar will filter the headlines by keyword.
 
-As usual please start by forking this repo.
+The app title is 'The Grauniad' - a reference to the nickname given to the Guardian newspaper due to its frequent typos as made famous by Private Eye.
 
-You'll create an app that shows the latest news using the Guardian API. You'll find
-instructions on how to setup and use the API down this page.
-
-## Project overview
+## The brief
 
 Your app will grab all the headlines from the Guardian newspaper API and display them on a
 page. Clicking on a headline will link the user to the actual article page on the Guardian's website.
-
-### Technologies
-
 You'll write a single page web app. You'll write your code in frontend JavaScript, CSS and
 HTML. You won't use Ruby or backend JavaScript.
 
-You're strongly encouraged to use the same tools and libraries you've been learning this
-week:
- * Jest to write your tests
- * The [`jest-fetch-mock`](https://www.npmjs.com/package/jest-fetch-mock) module (or
-   similar) to mock `fetch` requests (so you don't request the API when running tests!)
- * A build tool such as `esbuild` to bundle files together
+## Getting started
+
+1. Clone this repo `git clone
+2. Install dependencies `npm install`
+3. Build the app `npm run build`
+4. `open index.html` to open the app in your browser
+
+## Notes on use
+
+1. The app will display the top 10 headlines from the Guardian API
+2. Clicking on a headline will open the article in a new tab
+3. The search bar will filter the headlines by keyword
+
+## Running tests
+
+Enter `jest` in the command line to run the tests.
+
+## Technologies used
+
+- JavaScript
+- HTML
+- CSS
+- Jest
+- Postman
+- Git
+- esbuild
 
 ## User Stories
-
-Some of these stories will need decomposing if they seem too large.
 
 ```
 As a busy politician
@@ -104,29 +111,17 @@ I can see whizzy animations in the app
 
 ### API authentication
 
-You'll need to [register and get an API
+This project required [an API
 key](https://open-platform.theguardian.com/access/) to use the Guardian API. 
+The API key is imported from a gitignored file and is passed to the API as a query parameter.
 
 ### API request rate limits and stubbing
 
 The Guardian API is severely rate-limited.
 
-**Please stub your tests so we don't exceed the daily limit.  Otherwise, all requests will
-be rejected and everyone's apps will stop working!**
+**tests were stubbed so that the daily API limit was not exceeded. Otherwise, all requests would be rejected and everyone's apps would stop working!**
 
 ## Guardian API Overview
-
-**Remember to mock `fetch` in your tests to avoid exceeding the API rate limit**
-
-If you wanted to get the latest articles from the Guardian API, this is the cURL request
-you might make. Notice how it has a query parameter for `api-key`.
-
-```
-curl "https://content.guardianapis.com/search?q=&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=test"
-```
-
-Also notice that the URL parameter `q` is empty — we can pass in a search string to filter
-the returned articles, for example to search articles containing "America" in the title:
 
 ```
 curl "https://content.guardianapis.com/search?q=America&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=test"
@@ -193,13 +188,3 @@ The above request will return a response similar to this one:
 * cURL [man page](https://curl.haxx.se/docs/manpage.html)
 * [Postman](https://www.postman.com/downloads/?utm_source=postman-home), a program to send and test HTTP requests
 
-
-<!-- BEGIN GENERATED SECTION DO NOT EDIT -->
-
----
-
-**How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/news-summary-challenge&prefill_File=README.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/news-summary-challenge&prefill_File=README.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/news-summary-challenge&prefill_File=README.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/news-summary-challenge&prefill_File=README.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy/news-summary-challenge&prefill_File=README.md&prefill_Sentiment=😀)  
-Click an emoji to tell us.
-
-<!-- END GENERATED SECTION DO NOT EDIT -->

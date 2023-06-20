@@ -4,7 +4,6 @@ const apiKey = 'test'; // 👈🏻 THE test API KEY
 class NewsClient {
   async loadHeadlines(searchString) {
     const newsUrl = `https://content.guardianapis.com/search?q=${searchString}&query-fields=headline&show-fields=thumbnail,headline,byline&order-by=newest&api-key=${apiKey}`
-    // console.log(newsUrl) // VISIBILITY
     try {
       const response = await fetch(newsUrl); // 👈🏻 THE REAL FETCH REQUEST
       // const response = await fetch('./newsSample.js'); // 👈🏻 THE TEST FETCH REQUEST
@@ -18,9 +17,7 @@ class NewsClient {
       }
 
       const data = await response.json();
-      // console.log(data) // VISIBILITY
       // const headlinesArray = data[0].response.results.map(headline => { // 👈🏻 TEST LINE
-      console.log(data)
       const headlinesArray = data.response.results.map(headline => { // 👈🏻 REAL LINE
         return {
           section: headline.sectionName,
