@@ -1,5 +1,18 @@
 # News challenge
 
+[The brief](#the-brief) | [Getting started](#getting-started) | [Notes on use](#notes-on-use) | [Running tests](#running-tests) | [Technologies used](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+
+<p align="left">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg" alt="jest" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/>
+ </p>
+
 News Challenge is a Makers Academy weekend challenge to build a news app using the Guardian API.
 
 The app displays the top 10 headlines from the Guardian API. Clicking on a headline will open the article in a new tab. The search bar will filter the headlines by keyword.
@@ -32,12 +45,17 @@ Enter `jest` in the command line to run the tests.
 
 ## Technologies used
 
+[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+
 - JavaScript
+- Node.js
+- NPM
 - HTML
 - CSS
 - Jest
 - Postman
 - Git
+- GitHub
 - esbuild
 
 ## User Stories
@@ -99,6 +117,8 @@ I can see whizzy animations in the app
 
 ## Mockups
 
+[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+
 ### Headlines page
 
 ![Headlines page mockup](./images/news-summary-project-headlines-page-mockup.png)
@@ -110,6 +130,8 @@ I can see whizzy animations in the app
 ## API
 
 ### API authentication
+
+[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
 
 This project required [an API
 key](https://open-platform.theguardian.com/access/) to use the Guardian API. 
@@ -184,7 +206,19 @@ The above request will return a response similar to this one:
 
 ## Resources
 
+[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+
 * [Guardian newspaper API homepage](http://open-platform.theguardian.com/documentation/)
 * cURL [man page](https://curl.haxx.se/docs/manpage.html)
 * [Postman](https://www.postman.com/downloads/?utm_source=postman-home), a program to send and test HTTP requests
+
+## Screenshots
+
+The main screen showing the top 10 headlines from the Guardian API:
+
+<img src="images/main.png" alt="Main screen" width="600" />
+
+The search bar will filter the headlines by keyword. In this example, the search term is 'ai':
+
+<img src="images/search.png" alt="Articles on ai" width="600" />
 
