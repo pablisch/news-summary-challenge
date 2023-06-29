@@ -1,6 +1,6 @@
 # News challenge
 
-[The brief](#the-brief) | [Getting started](#getting-started) | [Notes on use](#notes-on-use) | [Running tests](#running-tests) | [Technologies used](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
 
 <p align="left">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
@@ -19,33 +19,33 @@ The app displays the top 10 headlines from the Guardian API. Clicking on a headl
 
 The app title is 'The Grauniad' - a reference to the nickname given to the Guardian newspaper due to its frequent typos as made famous by Private Eye.
 
-## The brief
+## The Brief
 
 Your app will grab all the headlines from the Guardian newspaper API and display them on a
 page. Clicking on a headline will link the user to the actual article page on the Guardian's website.
 You'll write a single page web app. You'll write your code in frontend JavaScript, CSS and
 HTML. You won't use Ruby or backend JavaScript.
 
-## Getting started
+## Getting Started
 
 1. Clone this repo `git clone
 2. Install dependencies `npm install`
 3. Build the app `npm run build`
 4. `open index.html` to open the app in your browser
 
-## Notes on use
+## Notes on Use
 
 1. The app will display the top 10 headlines from the Guardian API
 2. Clicking on a headline will open the article in a new tab
 3. The search bar will filter the headlines by keyword
 
-## Running tests
+## Running Tests
 
 Enter `jest` in the command line to run the tests.
 
-## Technologies used
+## Technologies Used
 
-[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
 
 - JavaScript
 - Node.js
@@ -115,23 +115,23 @@ So I make my news reading more fun
 I can see whizzy animations in the app
 ```
 
-## Mockups
+## Screenshots
 
-[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
 
-### Headlines page
+The main screen showing the top 10 headlines from the Guardian API:
 
-![Headlines page mockup](./images/news-summary-project-headlines-page-mockup.png)
+<img src="images/main.png" alt="Main screen" width="600" />
 
-### Article summary page
+The search bar will filter the headlines by keyword. In this example, the search term is 'ai':
 
-![Article page mockup](./images/news-summary-project-article-page-mockup.png)
+<img src="images/search.png" alt="Articles on ai" width="600" />
 
 ## API
 
 ### API authentication
 
-[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
 
 This project required [an API
 key](https://open-platform.theguardian.com/access/) to use the Guardian API. 
@@ -206,19 +206,19 @@ The above request will return a response similar to this one:
 
 ## Resources
 
-[Top](#news-challenge) | [Brief](#the-brief) | [Quick start](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Mockups](#mockups) | [API](#api) | [Resources](#resources) | [Screenshots](#screenshots)
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
 
 * [Guardian newspaper API homepage](http://open-platform.theguardian.com/documentation/)
 * cURL [man page](https://curl.haxx.se/docs/manpage.html)
 * [Postman](https://www.postman.com/downloads/?utm_source=postman-home), a program to send and test HTTP requests
 
-## Screenshots
+## Mockups
+### Headlines page
 
-The main screen showing the top 10 headlines from the Guardian API:
+![Headlines page mockup](./images/news-summary-project-headlines-page-mockup.png)
 
-<img src="images/main.png" alt="Main screen" width="600" />
+### Article summary page
 
-The search bar will filter the headlines by keyword. In this example, the search term is 'ai':
+![Article page mockup](./images/news-summary-project-article-page-mockup.png)
 
-<img src="images/search.png" alt="Articles on ai" width="600" />
-
+[Top](#news-challenge) | [Brief](#the-brief) | [Getting started](#getting-started) | [Use](#notes-on-use) | [Tests](#running-tests) | [Tech](#technologies-used) | [User stories](#user-stories) | [Screenshots](#screenshots) | [API](#api) | [Resources](#resources) | [Mockups](#mockups)
