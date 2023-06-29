@@ -88,32 +88,11 @@ I can specify a [search_query] on the page and get [articles_matching] this sear
 => search functionality
 ```
 
-### Stretch user stories
+## Processes
 
-```
-As a busy politician
-So I can quickly read through the essential of today's stories
-I can see a summarised version of of the article 
-```
+As part of my planning for this project, I mapped out the processes over time. This helped me to plan my classes and methods.
 
-To get a summary of an article's content, you'll need to use the [Aylien API
-endpoint](https://docs.aylien.com/textapi/endpoints/#summarization), which means
-integrating and calling another HTTP endpoint from a different API. This mean you'll need
-to first fetch articles from the Guardian API, **then** use the Aylien API to summarise
-the content — you'll need to use promises or callbacks to call both APIs and to handle the flow of
-control.
-
-```
-As a busy politician
-Just in case my laptop breaks
-I can read the site comfortably on my phone
-```
-
-```
-As a busy politician
-So I make my news reading more fun
-I can see whizzy animations in the app
-```
+<img src="images/news-summary-challenge-processes.png" alt="Processes" width="600" />
 
 ## Screenshots
 
